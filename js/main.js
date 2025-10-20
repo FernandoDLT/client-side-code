@@ -4,7 +4,12 @@ async function apiRequest(){
     const rapperName = document.querySelector('input').value
     try{
         const response = await fetch(`https://client-side-code.onrender.com/api/${rapperName}`)
-        const data = await response.json()
+       const data = await response.json()
+       
+       if(input==" "){
+        alert("Please enter a rapper name")
+        return
+       }
 
         console.log(data)
         document.querySelector('h2').innerText = data.birthName
