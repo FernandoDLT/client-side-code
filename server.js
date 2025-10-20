@@ -4,7 +4,7 @@ const path = require('path');
 const PORT = process.env.PORT || 3000;
 
 app.use('/js', express.static(path.join(__dirname, 'js')));
-// app.use('/css', express.static(path.join(__dirname, 'css')));
+app.use('/css', express.static(path.join(__dirname, 'css')));
 
 const rappers = {
     '21 savage': {
