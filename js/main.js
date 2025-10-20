@@ -2,9 +2,11 @@ document.querySelector('button').addEventListener('click', apiRequest)
 
 async function apiRequest(){
    const rapperName = document.querySelector('input').value.trim();
+   const h2 = document.querySelector('h2');
 
    if (!rapperName) {
-      document.querySelector('h2').innerText = 'Please enter a rapper name';
+      h2.innerText = 'Please enter a rapper name';
+      h2.style.color = "red";
       return;
    }
    
