@@ -6,8 +6,8 @@ async function apiRequest(){
         const response = await fetch(`https://client-side-code.onrender.com/api/${rapperName}`)
        const data = await response.json()
        
-       if(input==" "){
-        alert("Please enter a rapper name")
+       if(!rapperName){ // checks if field is empty
+        alert("Please enter a rapper's name")
         return
        }
 
