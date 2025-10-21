@@ -6,9 +6,9 @@ const PORT = process.env.PORT || 3000;
 app.use(express.static(path.join(__dirname)));
 
 const rappers = {
-    'super man': {
+    'superman': {
         'age': 250,
-        'birthName': 'Kal-El',
+        'birthName': 'Kal-El, AKA Clark Kent',
         'birthLocation': 'Krypton'
     },
     'batman': {
@@ -16,7 +16,7 @@ const rappers = {
         'birthName': 'Bruce Wayne',
         'birthLocation': 'Gotham City, New Jersey, USA'
     },
-    'spider man': {
+    'spiderman': {
         'age': 22,
         'birthName': 'Peter Parker',
         'birthLocation': 'Queens, New York City, USA'
