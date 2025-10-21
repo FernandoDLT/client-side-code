@@ -8,6 +8,8 @@ async function apiRequest(){
       h2.innerText = 'Please enter a rapper name';
       h2.style.color = "red";
       return;
+   } else {
+      h2.style.color = "black";
    }
    
       try{
