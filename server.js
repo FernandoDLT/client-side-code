@@ -6,25 +6,30 @@ const PORT = process.env.PORT || 3000;
 app.use(express.static(path.join(__dirname)));
 
 const rappers = {
-    '21 savage': {
-        'age': 29,
-        'birthName': 'Sheyaa Bin Abraham-Joseph',
-        'birthLocation': 'London, England'
+    'Super Man': {
+        'age': 250,
+        'birthName': 'Kal-El',
+        'birthLocation': 'Krypton'
     },
-    'eminem': {
+    'Batman': {
         'age': 50,
-        'birthName': 'Marshall Bruce Mathers III',
-        'birthLocation': 'Detroit, Michigan, USA'
+        'birthName': 'Bruce Wayne',
+        'birthLocation': 'Gotham City, New Jersey, USA'
     },
-    'dr. dre': {
-        'age': 57,
-        'birthName': 'Andre Romelle Young',
-        'birthLocation': 'Compton, California, USA'
+    'Spider Man': {
+        'age': 22,
+        'birthName': 'Peter Parker',
+        'birthLocation': 'Queens, New York City, USA'
+    },
+    'The Hulk': {
+        'age': 0,
+        'birthName': 'Bruce Banner',
+        'birthLocation': 'Dayton, Ohio, USA',
     },
     'unknown': {
         'age': 0,
-        'birthName': 'Dylan',
-        'birthLocation': 'Dylan, Connecticut'
+        'birthName': 'unknown',
+        'birthLocation': 'unknown',
     }
 }
 
