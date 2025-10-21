@@ -9,7 +9,7 @@ async function apiRequest(){
       h2.style.color = "red";
       return;
    } else {
-      h2.style.color = "black";
+      h2.style.color = "rgb(18, 226, 18)";
    }
    
       try{
