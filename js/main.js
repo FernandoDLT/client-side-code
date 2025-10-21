@@ -5,20 +5,17 @@ async function apiRequest(){
    const h2 = document.querySelector('h2');
 
    if (!rapperName) {
-      h2.innerText = 'Please enter a rapper name';
+      h2.innerText = 'Please enter a rapper\'s name';
       h2.style.color = "red";
       return;
-   } else {
+   } else { 
       h2.style.color = "rgb(18, 226, 18)";
    }
-   
       try{
       const response = await fetch(`https://client-side-code.onrender.com/api/${rapperName}`)
       const data = await response.json()
-
       console.log(data)
          document.querySelector('h2').innerText = data.birthName
-         
       }catch(error){ 
       console.log(error)
    }
