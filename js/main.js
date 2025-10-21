@@ -5,7 +5,7 @@ async function apiRequest(){
    const h2 = document.querySelector('h2');
 
    if (!rapperName) {
-      h2.innerText = 'Please enter a Super Hero\'s name';
+      h2.innerText = 'Please enter a Superhero\'s name';
       h2.style.color = "red";
       return;
    } else { 
